@@ -6,7 +6,7 @@ Group: K4112c \
 Author: Shikhov Roman Alekseevich \
 Lab: Lab1 \
 Date of create: 24.10.2022 \
-Date of finished: dd.mm.2022 \
+Date of finished: dd.mm.2022
 
 - minikube start \
 Разворачивает кластер \
@@ -46,3 +46,6 @@ kubectl expose pod/my-vault --port 8200 --type NodePort \
 
 После выполнения всех этапов работы, остановим кластер командой 'minikube stop'. \
 ![minikube_stop](minikube_stop.png)
+
+Схема контейнеров, pod'ов и сервисов. \
+![object-scheme](object-scheme.png)
