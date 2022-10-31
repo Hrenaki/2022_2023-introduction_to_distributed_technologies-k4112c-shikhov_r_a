@@ -41,3 +41,6 @@ REACT_APP_COMPANY_NAME: itmo
 
 - kubectl logs pod/my-itdt-bd8d559f4-prl4z \
 ![kubectl_logs1](images/kubectl_logs2.png)
+
+- Схема организации объектов: \
+![object-scheme](images/object-scheme.png)
