@@ -6,7 +6,7 @@ Group: K4112c \
 Author: Shikhov Roman Alekseevich \
 Lab: Lab1 \
 Date of create: 24.10.2022 \
-Date of finished: dd.mm.2022
+Date of finished: 27.10.2022
 
 - minikube start \
 Разворачивает кластер \
