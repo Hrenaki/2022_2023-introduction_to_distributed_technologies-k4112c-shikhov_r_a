@@ -6,25 +6,25 @@ Group: K4112c \
 Author: Shikhov Roman Alekseevich \
 Lab: Lab2 \
 Date of create: 31.10.2022 \
-Date of finished: dd.mm.2022 \
+Date of finished: dd.mm.2022
 
-- minikube start \
+- minikube start
 - kubectl apply -f manifest.yaml \
 Создаются deployment и nodeport service. \
 ![kubectl_apply](images/kubectl_apply.png)
 
-В контейнеры передаются следующие переменные окружения:
+В контейнеры передаются следующие переменные окружения: \
 REACT_APP_USERNAME: hrenaki \
-REACT_APP_COMPANY_NAME: itmo \
+REACT_APP_COMPANY_NAME: itmo
 
 - Посмотрим список объектов: \
 ![kubectl_get-all](images/kubectl_get-all.png)
 
-- Посмотрим, что переменные окружения установились: \
-- - kubectl describe pod/my-itdt-bd8d559f4-frz2d \
+- Посмотрим, что переменные окружения установились:
+  - kubectl describe pod/my-itdt-bd8d559f4-frz2d \
 ![kubectl_describe1](images/kubectl_describe1.png)
 
-- - kubectl describe pod/my-itdt-bd8d559f4-prl4z \
+  - kubectl describe pod/my-itdt-bd8d559f4-prl4z \
 ![kubectl_describe2](images/kubectl_describe2.png)
 
 - kubectl port-forward service/my-itdt 3000:3000 \
