@@ -50,3 +50,6 @@ react_app_company_name: itmo \
 
 - Браузер 'ругается' на созданный сертификат, т.к. он является самоподписанным. Иерархия сертификатов следующая:\
 ![cert-hierarchy](images/hierarchy.png)
+
+- Схема организации объектов k8s:\
+![objects](images/objects.png)
