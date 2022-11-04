@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-itdt-configmap
+data:
+  react_app_username: "hrenaki"
+  react_app_company_name: "itmo"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-itdt
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-itdt
+  template:
+    metadata:
+      labels:
+        app: my-itdt
+    spec:
+      containers:
+      - name: my-itdt
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        ports:
+        - name: my-itdt-port
+          containerPort: 3000
+        env:
+        - name: REACT_APP_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: my-itdt-configmap
+              key: react_app_username
+        - name: REACT_APP_COMPANY_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: my-itdt-configmap
+              key: react_app_company_name
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-itdt
+spec:
+  type: NodePort
+  selector:
+    app: my-itdt
+  ports:
+  - port: 3000
+    targetPort: my-itdt-port
