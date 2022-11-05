@@ -52,4 +52,4 @@ react_app_company_name: itmo \
 ![cert-hierarchy](images/hierarchy.png)
 
 - Схема организации объектов k8s:\
-![objects](images/objects.png)
+![objects](images/object-scheme.png)
