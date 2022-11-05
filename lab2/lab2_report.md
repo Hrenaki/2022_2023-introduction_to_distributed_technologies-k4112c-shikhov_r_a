@@ -6,7 +6,7 @@ Group: K4112c \
 Author: Shikhov Roman Alekseevich \
 Lab: Lab2 \
 Date of create: 31.10.2022 \
-Date of finished: dd.mm.2022
+Date of finished: 05.11.2022
 
 - minikube start
 - kubectl apply -f manifest.yaml \
