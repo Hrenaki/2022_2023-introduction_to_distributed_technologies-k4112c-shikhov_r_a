@@ -1,0 +1,19 @@
+apiVersion: projectcalico.org/v3
+kind: IPPool
+metadata:
+  name: city-spb-ippool
+spec:
+  cidr: 192.78.0.0/16
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: city == "spb"
+---
+apiVersion: projectcalico.org/v3
+kind: IPPool
+metadata:
+  name: city-nsk-ippool
+spec:
+  cidr: 192.54.0.0/16
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: city == "nsk"
