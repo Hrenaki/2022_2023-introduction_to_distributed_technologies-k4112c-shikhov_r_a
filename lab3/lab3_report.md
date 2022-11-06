@@ -6,7 +6,7 @@ Group: K4112c \
 Author: Shikhov Roman Alekseevich \
 Lab: Lab3 \
 Date of create: 01.11.2022 \
-Date of finished: dd.mm.2022
+Date of finished: 05.11.2022
 
 - Создаем манифест, содержащий указанный configMap, deployment, исплользующий значения из configMap, и сервис NodePort, открывающий доступ к pod'a deployment'a. \
 Значения переменных в configMap
