@@ -6,7 +6,7 @@ Group: K4112c \
 Author: Shikhov Roman Alekseevich \
 Lab: Lab4 \
 Date of create: 05.11.2022 \
-Date of finished: dd.mm.2022
+Date of finished: 19.11.2022
 
 - Создаем кластер с 2мя нодами и плагином CNI = calico:\
 ![minikube_start](images/minikube_start.png)
